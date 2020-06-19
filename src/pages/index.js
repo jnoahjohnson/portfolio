@@ -1,18 +1,66 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+// import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+
+//Elements
+import CurrentProjects from "../components/current-projects";
+import AboutSection from "../components/about-section";
+import ContactSection from "../components/contact-section";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`noah johnson`, `portfolio`, `developer`, `web`]}
         title="Home"
       />
+      <section
+        className="h-screen w-full text-white bg-violet flex flex-col justify-between px-4 md:px-10 lg:pl-20"
+        id="home"
+      >
+        <div></div>
+        <div className="mt-6">
+          <h1 className="text-6xl">Welcome!</h1>
+          <p className="text-xl">
+            I&apos;m Noah Johnson, a front-end web developer.<br></br> Check out
+            my projects and contact me if I can help you with anything.
+          </p>
+        </div>
 
-      <section className="text-center">
+        <div className="text-white self-center pl-0 mb-3 block">
+          <p className="text-lg">See More</p>
+          <Link to="/#current-projects" className="hover:shadow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="ml-4 hover:shadow"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </Link>
+        </div>
+      </section>
+      <section id="current-projects">
+        <CurrentProjects />
+      </section>
+      <section id="about">
+        <AboutSection />
+      </section>
+
+      <section id="contact">
+        <ContactSection />
+      </section>
+      {/* <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
           className="block w-1/2 mx-auto mb-8"
@@ -35,6 +83,9 @@ function IndexPage() {
           </a>
           , a utility-first CSS framework.
         </p>
+      </section> */}
+      <section>
+        <div className="h-screen"></div>
       </section>
     </Layout>
   );
