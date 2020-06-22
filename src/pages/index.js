@@ -84,8 +84,8 @@ function IndexPage() {
           , a utility-first CSS framework.
         </p>
       </section> */}
-      <section>
-        <div className="h-screen"></div>
+      <section className="mt-10 bg-violet text-white py-8 text-center">
+        <h1 className="text-gray-300 font-light">Have a great day!</h1>
       </section>
     </Layout>
   );

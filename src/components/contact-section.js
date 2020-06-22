@@ -4,46 +4,36 @@ import SectionLayout from "./section-layout";
 const ContactSection = () => {
   return (
     <SectionLayout title="Contact Me">
+      <h2 className="text-gray-700 text-lg mb-10">
+        Feel free to send me a message if you have any questions or want to hire
+        me for any project!
+      </h2>
       <form className="mx-auto md:w-1/2">
-        <p className="mb-8 leading-loose">
-          Here is an example of a form built using the official Tailwind CSS
-          Custom Forms plugin.{` `}
-          <a
-            className="font-bold text-gray-700 no-underline"
-            href="https://github.com/tailwindcss/custom-forms"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read the docs
-          </a>
-          .
-        </p>
-
         <label
           className="block mb-2 text-xs font-bold uppercase"
-          htmlFor="first-name"
+          htmlFor="name"
         >
-          First Name
+          Name
         </label>
 
         <input
           className="w-full mb-6 form-input"
-          id="first-name"
-          placeholder="Bill"
+          id="name"
+          placeholder="John"
           type="text"
         />
 
         <label
           className="block mb-2 text-xs font-bold uppercase"
-          htmlFor="last-name"
+          htmlFor="email"
         >
-          Last Name
+          Email
         </label>
 
         <input
           className="w-full mb-6 form-input"
-          id="last-name"
-          placeholder="Murray"
+          id="email"
+          placeholder="john@test.com"
           type="text"
         />
 

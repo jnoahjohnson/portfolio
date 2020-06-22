@@ -5,6 +5,7 @@ import SectionLayout from "./section-layout";
 import harryPotterImage from "../images/harry-potter.png";
 import shotboxImage from "../images/shotbox.png";
 import eightSenseImage from "../images/8Sense.png";
+import calculatorImage from "../images/calculator.png";
 
 const CurrentProjects = () => (
   <SectionLayout title="Projects">
@@ -56,7 +57,7 @@ const projects = [
     description:
       "During a college class, I made an order of operations calculator using vanilla JavaScript",
     technologies: "JavaScript, HTML, CSS",
-    image: "../images/background.jpg",
+    image: calculatorImage,
   },
 ];
 
