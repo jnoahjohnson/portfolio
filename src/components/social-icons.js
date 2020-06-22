@@ -10,19 +10,25 @@ const SocialIcons = () => (
   <div className="flex flex-row w-24 justify-between">
     <a
       className="text-white hover:text-gray-500 transition duration-300"
-      href="twitter.com"
+      href="https://github.com/jnoahjohnson"
+      target="_blank"
+      rel="noreferrer"
     >
       <div dangerouslySetInnerHTML={{ __html: icons.github }}></div>
     </a>
     <a
       className="text-white hover:text-gray-500 transition duration-300"
-      href="twitter.com"
+      href="https://twitter.com/jnoahjohnson"
+      target="_blank"
+      rel="noreferrer"
     >
       <div dangerouslySetInnerHTML={{ __html: icons.twitter }}></div>
     </a>
     <a
       className="text-white hover:text-gray-500 transition duration-300"
-      href="twitter.com"
+      href="https://www.linkedin.com/in/jnoahjohnson"
+      target="_blank"
+      rel="noreferrer"
     >
       <div dangerouslySetInnerHTML={{ __html: icons.linkedIn }}></div>
     </a>
