@@ -8,7 +8,11 @@ const ContactSection = () => {
         Feel free to send me a message if you have any questions or want to hire
         me for any project!
       </h2>
-      <form className="mx-auto md:w-1/2">
+      <form
+        className="mx-auto md:w-1/2"
+        data-netlify="true"
+        name="contact-form"
+      >
         <label
           className="block mb-2 text-xs font-bold uppercase"
           htmlFor="name"
