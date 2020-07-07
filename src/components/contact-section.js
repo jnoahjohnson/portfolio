@@ -9,10 +9,13 @@ const ContactSection = () => {
         me for any project!
       </h2>
       <form
-        className="mx-auto md:w-1/2"
+        name="new-contact"
+        method="post"
         data-netlify="true"
-        name="contact-form"
+        data-netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <label
           className="block mb-2 text-xs font-bold uppercase"
           htmlFor="name"
