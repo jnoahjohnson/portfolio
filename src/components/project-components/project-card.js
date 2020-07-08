@@ -12,6 +12,16 @@ const ProjectCard = ({ data }) => {
         <div>
           <h1 className="text-2xl font-bold mb-2">{data.title}</h1>
           <p className="text-lg text-gray-600 mb-6">{data.simpleDescription}</p>
+          {data.link ? (
+            <a
+              href={data.link}
+              target="_blank"
+              rel="noreferrer"
+              className="text-violet hover:text-gray-700"
+            >
+              Check it Out
+            </a>
+          ) : null}
         </div>
         <p>{data.technologies}</p>
       </div>

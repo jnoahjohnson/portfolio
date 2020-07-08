@@ -26,6 +26,7 @@ const projects = [
   {
     id: 2,
     title: "Competition Site",
+    link: "https://harrypotter.pineapplesites.com",
     simpleDescription:
       "A Harry Potter themed website for a community competition.",
     description: "A local group wanted a webstie to track ",
@@ -36,6 +37,7 @@ const projects = [
     id: 3,
     title: "SHOTBOX Website",
     simpleDescription: "E-commerce store for SHOTBOX built on Shopify.",
+    link: "https://shotbox.me",
     description:
       "During a college class, I made an order of operations calculator using vanilla JavaScript",
     technologies: "HTML, Liquid, JavaScript, Shopify",
