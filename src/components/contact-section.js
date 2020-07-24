@@ -27,7 +27,7 @@ const ContactSection = () => {
         <input
           className="w-full mb-6 form-input"
           id="name"
-          placeholder="name@domain.com"
+          placeholder="John Johnson"
           type="text"
         />
 
