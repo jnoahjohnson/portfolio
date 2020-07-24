@@ -16,7 +16,6 @@ const ContactSection = () => {
         action="/success"
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
         <label
           className="block mb-2 text-xs font-bold uppercase"
           htmlFor="name"
@@ -28,6 +27,7 @@ const ContactSection = () => {
           className="w-full mb-6 form-input"
           id="name"
           placeholder="John Johnson"
+          name="name"
           type="text"
         />
 
@@ -41,6 +41,7 @@ const ContactSection = () => {
         <input
           className="w-full mb-6 form-input"
           id="email"
+          name="email"
           placeholder="john@test.com"
           type="text"
         />
@@ -55,6 +56,7 @@ const ContactSection = () => {
         <textarea
           className="w-full mb-6 form-textarea"
           id="message"
+          name="message"
           placeholder="Say something..."
           rows="8"
         />
