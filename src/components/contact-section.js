@@ -43,7 +43,7 @@ const ContactSection = () => {
           id="email"
           name="email"
           placeholder="john@test.com"
-          type="text"
+          type="email"
         />
 
         <label
